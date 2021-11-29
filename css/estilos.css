@@ -37,6 +37,22 @@ a {
       text-decoration: none;
       color: black; }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth; }
+
+/*flex inicio*/
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh; }
+
 .contenedorInicio {
   padding: 3%;
   display: grid;
@@ -76,22 +92,6 @@ a {
 .imgInicio {
   max-width: 100%; }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-html {
-  font-family: 'Poppins', sans-serif;
-  scroll-behavior: smooth; }
-
-/*flex inicio*/
-.contenedor {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh; }
-
 .inicioNosotros {
   padding: 2%;
   display: grid;
@@ -120,24 +120,6 @@ html {
 
 .imgNosotros {
   max-width: 100%; }
-
-.footer {
-  width: 100%;
-  align-self: flex-end;
-  background-color: #486975;
-  grid-area: footer;
-  padding: 4%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center; }
-
-.footer div li {
-  text-align: center;
-  list-style: none; }
-
-.footer div li a {
-  text-decoration: none;
-  color: black; }
 
 .inicioServicios {
   display: grid;
@@ -260,6 +242,38 @@ html {
   padding: 2%;
   margin-top: 30px; }
 
+.footer {
+  width: 100%;
+  align-self: flex-end;
+  background-color: #486975;
+  grid-area: footer;
+  padding: 4%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.footer div li {
+  text-align: center;
+  list-style: none; }
+
+.footer div li a {
+  text-decoration: none;
+  color: black; }
+
+@keyframes desaparecer {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 100%; } }
+
+@keyframes desaparecerInicio {
+  0% {
+    opacity: 0; }
+  40% {
+    opacity: 0%; }
+  100% {
+    opacity: 100%; } }
+
 /* Tablet */
 @media screen and (max-width: 768px) and (max-width: 1024px) {
   .header {
@@ -355,17 +369,3 @@ html {
     justify-content: space-around;
     align-items: center;
     margin-bottom: 0; } }
-
-@keyframes desaparecer {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 100%; } }
-
-@keyframes desaparecerInicio {
-  0% {
-    opacity: 0; }
-  40% {
-    opacity: 0%; }
-  100% {
-    opacity: 100%; } }
