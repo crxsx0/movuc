@@ -1,0 +1,52 @@
+.inicioServicios{
+    display: grid;
+    padding: 2%;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+    "imgFormateo textoFormateo"
+    "imgMantenimiento textoMantenimiento"
+    "imgInstalacion textoInstalacion"
+    "imgProblemas textoProblemas";
+    animation-name: desaparecerInicio;
+    animation-duration: 1.4s;
+}
+
+.imgServicios{
+    max-width: 100%;
+}
+
+.imgFormateo{
+    grid-area: imgFormateo;
+}
+
+.textoFormateo{
+    padding: 10px;
+    grid-area: textoFormateo;
+    transition: all 0.5s;
+}
+.imgMantenimiento{
+    grid-area: imgMantenimiento;
+}
+
+.textoMantenimiento{
+    grid-area: textoMantenimiento;
+}
+
+.imgInstalacion{
+    grid-area: imgInstalacion;
+}
+
+.textoInstalacion{
+    grid-area: textoInstalacion;
+}
+
+.imgProblemas{
+    grid-area: imgProblemas;
+}
+
+.textoProblemas{
+    grid-area: textoProblemas;
+}

@@ -1,0 +1,23 @@
+@keyframes desaparecer{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 100%;
+    }
+}
+
+@keyframes desaparecerInicio{
+    0%{
+        opacity: 0;
+    }
+
+    40%{
+        opacity: 0%;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+}

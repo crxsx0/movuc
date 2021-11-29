@@ -1,0 +1,99 @@
+.botonContacto{
+    background-color: #486975;
+    padding: 15%;
+    margin: 10%;
+    border-radius: 3rem;
+}
+
+.boton{
+    background-color: #486975;
+    padding: 2%;
+    margin: 3%;
+    border-radius: 3rem;
+
+    a{
+        text-align: justify;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card1, .card2, .card3{
+    text-align: center;
+    margin: 3% 10%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.inicioContacto{
+    display: grid;
+    grid-gap: 3%;
+    padding: 2%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+    "contactoimg contactoh2"
+    "cards cards"
+    "iframeMapa textoMapa";
+    animation-name: desaparecerInicio;
+    animation-duration: 1.4s;
+}
+
+[class^="fas fa"]{
+    font-size: 30px;
+}
+
+[class^="far fa"]{
+    font-size: 30px;
+}
+
+.mapa{
+    max-width: 100%;
+}
+
+.imgContacto{
+    max-width: 100%;
+}
+
+.contactoH2{
+    grid-area: contactoh2;
+    padding: 2%;
+}
+
+.contactoImg{
+    grid-area: contactoimg;
+}
+
+.cards{
+    grid-area: cards;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.iframeMapa{
+    grid-area: iframeMapa;
+    padding: 2%;;
+    overflow: hidden;
+}
+
+.textoMapa{
+    grid-area: textoMapa;
+    padding: 2%;
+    margin-top: 30px;
+}

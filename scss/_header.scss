@@ -1,0 +1,47 @@
+.header{
+    grid-area: header;
+    background-color: white;
+    padding: 3%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    position: sticky;
+    animation-name: desaparecer;
+    animation-duration: 1.75s;
+}
+
+a:hover{
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    transition: all .2s;
+}
+
+.a_bold{
+    font-weight: bold;
+}
+
+.header h1 a span{
+    color: #486975;
+}
+
+.flexNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    li{
+        list-style: none;
+        padding: 1%;
+        margin: 3%;
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
