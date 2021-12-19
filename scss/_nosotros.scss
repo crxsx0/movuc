@@ -1,35 +1,37 @@
-.inicioNosotros{
-    padding: 2%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    align-items: center;
-    grid-template-areas:
-    "img nosotros";
-    animation-name: desaparecerInicio;
-    animation-duration: 1.4s;
-}
-
-.divNosotrosTexto{
-    grid-area: nosotros;
+.text_nosotros{
+    grid-area: text;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    color: $color-text;
+
+    h2{
+        font-size: 180%;
+    }
+
+    p{
+        text-align: justify;
+        padding: 3%;
+    }
 }
 
-.divNosotrosTexto h2{
-    font-size: 180%;
-}
-
-.divNosotrosTexto p{
-    text-align: justify;
-    padding: 4%;
-}
-
-.divNosotrosImg{
+.img_nosotros{
     grid-area: img;
+
+    img{
+        max-width: 100%;
+    }
 }
 
-.imgNosotros{
-    max-width: 100%;
+.inicio_nosotros{
+    padding: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "img text";
+    height: 90vh;
+    animation-name: desaparecerInicio;
+    animation-duration: 1.4s;
 }
