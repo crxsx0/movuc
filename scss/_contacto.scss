@@ -33,6 +33,14 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+
+    h3{
+        color: $color-text;
+    }
+
+    p{
+        color: $color-text;
+    }
 }
 
 .inicioContacto{
@@ -54,10 +62,12 @@
 
 [class^="fas fa"]{
     font-size: 30px;
+    color: $color-text;
 }
 
 [class^="far fa"]{
     font-size: 30px;
+    color: $color-text;
 }
 
 .mapa{
@@ -72,6 +82,7 @@
 .contactoH2{
     grid-area: contactoh2;
     padding: 2%;
+    color: $color-text;
 }
 
 .contactoImg{
@@ -98,4 +109,5 @@
     grid-area: textoMapa;
     padding: 2%;
     margin-top: 30px;
+    color: $color-text;
 }
