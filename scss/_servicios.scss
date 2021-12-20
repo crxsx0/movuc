@@ -73,6 +73,12 @@
     grid-template-rows: auto;
     grid-template-areas: 
     "img text";
+    transition: all 1.2s;
+}
+
+.card_services:hover{
+    transform: translate3d(0, -20px, 0);
+    box-shadow: 2px 2px 30px;
 }
 
 .boton_servicios{

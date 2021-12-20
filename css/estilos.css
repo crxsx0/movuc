@@ -17,7 +17,7 @@ a:hover {
 a {
   text-decoration: none;
   color: #2f2e41;
-  transition: all .2s; }
+  transition: all 0.7s; }
 
 .a_bold {
   font-weight: bold; }
@@ -159,7 +159,12 @@ html {
   border-radius: 6.5rem;
   grid-template-columns: 50% 50%;
   grid-template-rows: auto;
-  grid-template-areas: "img text"; }
+  grid-template-areas: "img text";
+  transition: all 1.2s; }
+
+.card_services:hover {
+  transform: translate3d(0, -20px, 0);
+  box-shadow: 2px 2px 30px; }
 
 .boton_servicios {
   background-color: #2f2e41;
@@ -181,11 +186,15 @@ html {
   background-color: #486975;
   padding: 2%;
   margin: 3%;
-  border-radius: 3rem; }
+  border-radius: 3rem;
+  transition: all 1.0s; }
   .boton a {
     text-align: justify;
     text-decoration: none;
     color: #2f2e41; }
+
+.boton:hover {
+  transform: scale(1.04); }
 
 .cards {
   display: flex;
@@ -229,7 +238,11 @@ html {
 
 .mapa {
   max-width: 100%;
-  border-radius: 2.5rem; }
+  border-radius: 2.5rem;
+  transition: all 1s; }
+
+.mapa:hover {
+  transform: translate3d(0, -10px, 0); }
 
 .imgContacto {
   max-width: 100%; }
