@@ -2,7 +2,6 @@
 
 @media screen and (max-width: 768px) and (max-width: 1024px){
     .header{
-        grid-area: header;
         background-color: white;
         padding: 5%;
         display: flex;
@@ -24,7 +23,6 @@
 
 @media screen and (max-width: 767px) {
     .header{
-        grid-area: header;
         background-color: white;
         padding: 5%;
         display: flex;
@@ -32,88 +30,95 @@
         justify-content: space-evenly;
         align-items: center;
     }
-    
+
     .flexNav{
         display: flex;
         justify-content: space-around;
         align-items: center;
+
+        li{
+            margin: 1%;
+        }
     }
 
     .botonContacto{
-        background-color: #486975;
+        background-color: $color-page;
         padding: 8%;
         margin: 10%;
         border-radius: 1.5rem;
     }
-    
+
     .boton{
-        background-color: #486975;
+        background-color: $color-page;
         padding: 3%;
         margin: 3%;
         border-radius: 1.5rem;
     }
 
-    .divInicio h2{
+    .text_inicio h2{
         font-size: 180%;
     }
-
-    .flexNav li{
-        list-style: none;
-        margin: 1%;
-    }
     
-    .contenedorInicio{
+    .inicio_index{
+        margin-top: 10%;
+        margin-bottom: 36%;
         padding: 3%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-        grid-gap: 2%;
-        justify-items: center;
-        align-items: center;
-        grid-template-areas:
-        "div2"
-        "div1";
+        display: flex;
+        flex-direction: column-reverse;
+
+        img{
+            margin-bottom: 13%;
+        }
     }
 
     .footer{
         display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .inicio_nosotros{
+        margin-top: 16%;
+        margin-bottom: 24%;
+        padding: 2%;
+        display: flex;
+        flex-direction: column-reverse;
+
+        img{
+            margin-bottom: 10%;
+        }
+    }
+
+    .inicio_servicios{
+        display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+
+        img{
+            margin-right: 0;
+        }
     }
 
-    .inicioNosotros{
-        padding: 2%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-        justify-items: center;
+    .card_services{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        grid-template-areas:
-        "img"
-        "nosotros";
+        border-radius: 4rem;
+
+        img{
+            border-radius: 3.5rem;
+        }
     }
 
-    .inicioServicios{
-        display: grid;
-        padding: 3%;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(8, auto);
-        justify-items: center;
-        align-items: center;
-        grid-template-areas:
-        "imgFormateo"
-        "textoFormateo"
-        "imgMantenimiento"
-        "textoMantenimiento"
-        "imgInstalacion"
-        "textoInstalacion"
-        "imgProblemas"
-        "textoProblemas";
+    .boton_servicios a{
+        font-size: 14px;
     }
 
     .inicioContacto{
-        overflow: hidden;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -131,7 +136,6 @@
     }
 
     .cards{
-        grid-area: cards;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
