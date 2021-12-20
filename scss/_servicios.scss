@@ -1,52 +1,85 @@
-.inicioServicios{
+.inicio_servicios{
     display: grid;
-    padding: 2%;
-    grid-template-columns: 2fr 3fr;
-    grid-template-rows: auto auto;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
     justify-items: center;
     align-items: center;
-    grid-template-areas:
-    "imgFormateo textoFormateo"
-    "imgMantenimiento textoMantenimiento"
-    "imgInstalacion textoInstalacion"
-    "imgProblemas textoProblemas";
+    grid-template-areas: 
+    "h2 img"
+    "cards cards";
     animation-name: desaparecerInicio;
     animation-duration: 1.4s;
+
+
+    h2{
+        grid-area: h2;
+        padding: 2%;
+        color: $color-text;
+    }
+
+    img{
+        grid-area: img;
+        max-width: 100%;
+        margin-right: 15%;
+        border-radius: 6rem;
+    }
 }
 
-.imgServicios{
-    max-width: 100%;
+.cards_servicios{
+    padding: 5%;
+    grid-area: cards;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.imgFormateo{
-    grid-area: imgFormateo;
+.img_service{
+    grid-area: img;
 }
 
-.textoFormateo{
-    padding: 10px;
-    grid-area: textoFormateo;
-    transition: all 0.5s;
-}
-.imgMantenimiento{
-    grid-area: imgMantenimiento;
+.text_service{
+    padding: 2%;
+    margin: 0% 2% 0% 5%;
+    grid-area: text;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: whitesmoke;
+
+    h3{
+        color: $color-text;
+        font-weight: bold;
+        font-size: 140%;
+    }
 }
 
-.textoMantenimiento{
-    grid-area: textoMantenimiento;
+.text_service_precio{
+    font-size: 160%;
 }
 
-.imgInstalacion{
-    grid-area: imgInstalacion;
+.card_services{
+    display: grid;
+    margin: 2%;
+    padding: 3%;
+    background-color: $color-page;
+    border-radius: 6.5rem;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "img text";
 }
 
-.textoInstalacion{
-    grid-area: textoInstalacion;
-}
+.boton_servicios{
+    background-color: $color-text;
+    padding: 2.5%;
+    margin-top: 2%;
+    border-radius: 3rem;
 
-.imgProblemas{
-    grid-area: imgProblemas;
-}
-
-.textoProblemas{
-    grid-area: textoProblemas;
+    a{
+        text-align: justify;
+        text-decoration: none;
+        color: whitesmoke;
+    }
 }
