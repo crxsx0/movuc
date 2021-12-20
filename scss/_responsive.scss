@@ -118,6 +118,11 @@
         }
     }
 
+    .card_services:hover{
+        transform: translate3d(0, -5px, 0);
+        box-shadow: 1px 1px 20px;
+    }
+
     .boton_servicios a{
         font-size: 14px;
     }
