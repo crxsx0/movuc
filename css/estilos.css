@@ -353,6 +353,8 @@ html {
     justify-content: space-between;
     align-items: center;
     text-align: justify; }
+  .text_footer {
+    margin-top: 7%; }
   .inicio_nosotros {
     margin-top: 16%;
     margin-bottom: 24%;
