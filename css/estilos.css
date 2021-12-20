@@ -145,6 +145,8 @@ html {
     color: #2f2e41;
     font-weight: bold;
     font-size: 140%; }
+  .text_service p {
+    text-align: justify; }
 
 .text_service_precio {
   font-size: 160%; }
