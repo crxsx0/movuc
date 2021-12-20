@@ -204,6 +204,7 @@ html {
   display: grid;
   grid-gap: 3%;
   padding: 2%;
+  margin-bottom: 2%;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto;
   justify-items: center;
@@ -219,7 +220,8 @@ html {
   font-size: 30px; }
 
 .mapa {
-  max-width: 100%; }
+  max-width: 100%;
+  border-radius: 2.5rem; }
 
 .imgContacto {
   max-width: 100%; }
