@@ -2,19 +2,25 @@
     width: 100%;
     align-self: flex-end;
     background-color: $color-page;
-    grid-area: footer;
     padding: 4%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.footer div li{
-    text-align: center;
-    list-style: none;
+.text_footer{
+    color: $color-text;
 }
 
-.footer div li a{
-    text-decoration: none;
-    color: black;
+.footer{
+    div{
+        li{
+            text-align: center;
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: $color-text;
+            }
+        }
+    }
 }
