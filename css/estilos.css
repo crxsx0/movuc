@@ -269,17 +269,18 @@ html {
   padding: 4%;
   display: flex;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  animation-name: desaparecerInicio;
+  animation-duration: 1.4s; }
+  .footer div li {
+    text-align: center;
+    list-style: none; }
+    .footer div li a {
+      text-decoration: none;
+      color: #2f2e41; }
 
 .text_footer {
   color: #2f2e41; }
-
-.footer div li {
-  text-align: center;
-  list-style: none; }
-  .footer div li a {
-    text-decoration: none;
-    color: #2f2e41; }
 
 @keyframes desaparecer {
   0% {
