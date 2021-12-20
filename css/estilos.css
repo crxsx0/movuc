@@ -264,31 +264,35 @@ html {
   width: 100%;
   align-self: flex-end;
   background-color: #486975;
-  grid-area: footer;
   padding: 4%;
   display: flex;
   justify-content: space-around;
   align-items: center; }
 
+.text_footer {
+  color: #2f2e41; }
+
 .footer div li {
   text-align: center;
   list-style: none; }
-
-.footer div li a {
-  text-decoration: none;
-  color: black; }
+  .footer div li a {
+    text-decoration: none;
+    color: #2f2e41; }
 
 @keyframes desaparecer {
-  from {
+  0% {
     opacity: 0; }
-  to {
+  13% {
+    transform: translate3d(0, -100px, 0); }
+  100% {
     opacity: 100%; } }
 
 @keyframes desaparecerInicio {
   0% {
     opacity: 0; }
   40% {
-    opacity: 0%; }
+    opacity: 0%;
+    transform: translate3d(0, -100px, 0); }
   100% {
     opacity: 100%; } }
 
