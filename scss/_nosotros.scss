@@ -26,13 +26,13 @@
 
 .inicio_nosotros{
     padding: 2%;
+    margin-bottom: 9%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
     "img text";
     align-items: center;
-    height: 90vh;
     animation-name: desaparecerInicio;
     animation-duration: 1.4s;
 }

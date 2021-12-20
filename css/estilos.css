@@ -1,22 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 .header {
-  grid-area: header;
   background-color: white;
   padding: 3%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  z-index: 9999;
   top: 0;
   position: sticky;
   animation-name: desaparecer;
-  animation-duration: 1.75s; }
+  animation-duration: 1.4s; }
 
 a:hover {
   font-weight: bold; }
 
 a {
   text-decoration: none;
-  color: black;
+  color: #2f2e41;
   transition: all .2s; }
 
 .a_bold {
@@ -33,9 +33,6 @@ a {
     list-style: none;
     padding: 1%;
     margin: 3%; }
-    .flexNav li a {
-      text-decoration: none;
-      color: black; }
 
 * {
   margin: 0;
@@ -52,75 +49,58 @@ html {
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh; }
- 
-.contenedorInicio {
-  padding: 3%;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: auto;
-  align-items: center;
-  grid-template-areas: "div1 div2"
- "div3 div3";
-  animation-name: desaparecerInicio;
-  animation-duration: 1.4s; }
 
-.divInicio {
-  grid-area: div1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center; }
-
-.div3 {
-  grid-area: div3;
+.text_inicio {
+  grid-area: text;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
-
-.div3 h2 {
-  margin-bottom: 3%; }
-
-.divInicio h2 {
-  font-size: 260%; }
-
-.divImg {
-  grid-area: div2;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.imgInicio {
-  max-width: 100%; }
-
-.inicioNosotros {
-  padding: 2%;
-  display: grid;
-  grid-template-columns: 50% 50%;
   align-items: center;
-  grid-template-areas: "img nosotros";
-  animation-name: desaparecerInicio;
-  animation-duration: 1.4s; }
+  color: #2f2e41; }
+  .text_inicio h2 {
+    font-size: 260%; }
 
-.divNosotrosTexto {
-  grid-area: nosotros;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center; }
-
-.divNosotrosTexto h2 {
-  font-size: 180%; }
-
-.divNosotrosTexto p {
-  text-align: justify;
-  padding: 4%; }
-
-.divNosotrosImg {
+.img_inicio {
   grid-area: img; }
+  .img_inicio img {
+    max-width: 100%; }
 
-.imgNosotros {
-  max-width: 100%; }
+.inicio_index {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "text img";
+  animation-name: desaparecerInicio;
+  animation-duration: 1.4s; }
+
+.text_nosotros {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #2f2e41; }
+  .text_nosotros h2 {
+    font-size: 180%; }
+  .text_nosotros p {
+    text-align: justify;
+    padding: 3%; }
+
+.img_nosotros {
+  grid-area: img; }
+  .img_nosotros img {
+    max-width: 100%; }
+
+.inicio_nosotros {
+  padding: 2%;
+  margin-bottom: 9%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "img text";
+  align-items: center;
+  animation-name: desaparecerInicio;
+  animation-duration: 1.4s; }
 
 .inicioServicios {
   display: grid;
@@ -129,10 +109,7 @@ html {
   grid-template-rows: auto auto;
   justify-items: center;
   align-items: center;
-  grid-template-areas: "imgFormateo textoFormateo"
- "imgMantenimiento textoMantenimiento"
- "imgInstalacion textoInstalacion"
- "imgProblemas textoProblemas";
+  grid-template-areas: "imgFormateo textoFormateo" "imgMantenimiento textoMantenimiento" "imgInstalacion textoInstalacion" "imgProblemas textoProblemas";
   animation-name: desaparecerInicio;
   animation-duration: 1.4s; }
 
@@ -204,9 +181,7 @@ html {
   grid-template-rows: auto auto auto;
   justify-items: center;
   align-items: center;
-  grid-template-areas: "contactoimg contactoh2"
- "cards cards"
- "iframeMapa textoMapa";
+  grid-template-areas: "contactoimg contactoh2" "cards cards" "iframeMapa textoMapa";
   animation-name: desaparecerInicio;
   animation-duration: 1.4s; }
 
@@ -332,8 +307,7 @@ html {
     grid-gap: 2%;
     justify-items: center;
     align-items: center;
-    grid-template-areas: "div2"
- "div1"; }
+    grid-template-areas: "div2" "div1"; }
   .footer {
     display: flex;
     flex-direction: column;
@@ -346,8 +320,7 @@ html {
     grid-template-rows: auto auto;
     justify-items: center;
     align-items: center;
-    grid-template-areas: "img"
- "nosotros"; }
+    grid-template-areas: "img" "nosotros"; }
   .inicioServicios {
     display: grid;
     padding: 3%;
@@ -355,14 +328,7 @@ html {
     grid-template-rows: repeat(8, auto);
     justify-items: center;
     align-items: center;
-    grid-template-areas: "imgFormateo"
- "textoFormateo"
- "imgMantenimiento"
- "textoMantenimiento"
- "imgInstalacion"
- "textoInstalacion"
- "imgProblemas"
- "textoProblemas"; }
+    grid-template-areas: "imgFormateo" "textoFormateo" "imgMantenimiento" "textoMantenimiento" "imgInstalacion" "textoInstalacion" "imgProblemas" "textoProblemas"; }
   .inicioContacto {
     overflow: hidden;
     display: flex;
